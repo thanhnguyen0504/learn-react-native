@@ -28,7 +28,10 @@ const HomeScreen = ({ navigation }) => {
   const gotoSquareScreen = () => {
     navigate('SquareScreen');
   };
-  
+
+  const gotoSquareScreenSecond = () => {
+    navigate('SquareScreenSecond');
+  };  
 
   return (
     <View>
@@ -39,6 +42,7 @@ const HomeScreen = ({ navigation }) => {
       <Button styles={styles.buttonStyle} onPress={gotoCounter} title="Go to counter screen "/>
       <Button styles={styles.buttonStyle} onPress={gotoColorScreen} title="Go to color screen "/>
       <Button styles={styles.buttonStyle} onPress={gotoSquareScreen} title="Go to square screen "/>
+      <Button styles={styles.buttonStyle} onPress={gotoSquareScreenSecond} title="Go to square 2nd "/>
     </View>
   );
 };
